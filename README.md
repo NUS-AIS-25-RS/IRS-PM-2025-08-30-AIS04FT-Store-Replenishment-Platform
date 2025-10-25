@@ -1,38 +1,21 @@
-﻿### [ Practice Module ] Project Submission Template: Github Repository & Zip File
+﻿## SECTION 1 : PROJECT TITLE
+## Store Replenishment Platform
 
-**[ Naming Convention ]** CourseCode-StartDate-BatchCode-TeamName-ProjectName.zip
-
-* **[ MTech Thru-Train Group Project Naming Example ]** IRS-PM-2020-01-18-IS02PT-GRP-AwsomeSG-HDB_BTO_Recommender.zip
-
-* **[ MTech Stackable Group Project Naming Example ]** IRS-PM-2020-01-18-STK02-GRP-AwsomeSG-HDB_BTO_Recommender.zip
-
-[Online editor for this README.md markdown file](https://pandao.github.io/editor.md/en.html "pandao")
-
----
-
-### <<<<<<<<<<<<<<<<<<<< Start of Template >>>>>>>>>>>>>>>>>>>>
-
----
-
-## SECTION 1 : PROJECT TITLE
-## Singapore Housing & Deveoplment Board - BTO Recommender System
-
-<img src="SystemCode/clips/static/hdb-bto.png"
+<img src="SystemCode/static/frontend.png"
      style="float: left; margin-right: 0px;" />
 
 ---
 
 ## SECTION 2 : EXECUTIVE SUMMARY / PAPER ABSTRACT
-Singapore ranks amongst countries with the highest population density in the world. In a bid to have firm control over long term urban planning, the Singapore government came up with the “Built to Order” (abbreviated BTO) initiative back in 2001. These are new Housing Development Board (HDB) flats tightly controlled by their eligibility and quantity released every year. In more recent years, the modern BTO scheme in Singapore requires a waiting period of 3-4 years, and is generally targeted at young Singaporean couples looking to purchase their first property and set up a family. Nationality and income ceilings are some of the broad filters that determine one’s eligibility for the highly sought after projects. 
+Many retail stores still rely on experience and simple reports to make replenishment decisions:
+•	Demand fluctuations and seasonality often result in alternating periods of stockouts and overstocking.
+•	Available data is usually limited to sales, prices, and inventory snapshots, lacking end-to-end visibility of warehouse, geographic, transportation, and cost information.
+•	Manual judgment struggles to balance replenishment schedules and safety stock for a future window of T days, often missing holiday effects or promotional impacts.
 
-
-Our team, comprising of 6 young Singaporeans, all hope to be property owners one day. Many of our peers opt for BTO flats due to their affordability, existence of financial aid from the government, as well as their resale value. However, there often exists a knowledge gap for these young couples during the decision making process and they end up making potentially regretful decisions. We would like to bridge this knowledge gap, and have hence chosen to base our project on creating a recommender system for BTO flats, utilizing the data from recent launches in Tampines, Eunos, Sengkang and Punggol. 
-
-
-Using the techniques imparted to us in lectures, our group first set out to build a sizeable knowledge base via conducting an interview and administering a survey. While building the system, we utilized tools such as Java to scrape real time data from HDB website and transform it into a database, CLIPS to synthesize the rule based reasoning process, and Python to integrate it into an easy to use UI for the everyday user. To add icing on the cake, we even hosted the system on a website so that the everyday user can access it through the click of a link.
-
-
-Our team had an amazing time working on this project, and hope to share our insights with everyone. Despite a focus on BTO flats, we would recommend it for everybody interested in understanding property market trends for residence or investment purposes. There truly are a wide array of factors behind the decision to invest in a property, and we only wish there was more time to work on the scope and scale of the project. 
+This project presents a prototype intelligent replenishment system that we have developed to assist store managers in making data-driven restocking decisions.
+The front-end interface allows managers to view replenishment recommendations for upcoming time periods.
+The system integrates historical sales and price data from the same store and comparable regions, together with current inventory levels, to produce an optimized replenishment list and recommended quantities for the next T days (configurable).
+To ensure interpretability and automation, the system combines Chain-of-Thought (CoT) reasoning, n8n workflow orchestration, and Model Context Protocol (MCP) for external API integration.
 
 ---
 
@@ -40,93 +23,62 @@ Our team had an amazing time working on this project, and hope to share our insi
 
 | Official Full Name  | Student ID (MTech Applicable)  | Work Items (Who Did What) | Email (Optional) |
 | :------------ |:---------------:| :-----| :-----|
-| Desmond Chua | A1234567A | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A1234567A@nus.edu.sg |
-| Chang Ye Han | A1234567B | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A1234567B@gmail.com |
-| Chee Jia Wei | A1234567C | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A1234567C@outlook.com |
-| Ganesh Kumar | A1234567D | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A1234567D@yahoo.com |
-| Jeanette Lim | A1234567E | xxxxxxxxxx yyyyyyyyyy zzzzzzzzzz| A1234567E@qq.com |
+| Liu Zheyi | A0298521X | Data Preparation, Database setup, Data analyze and setup backend structure | e1352659@u.nus.edu |
+| Cen Haoyang | A0297892A | Config and setup of COT Reasoning Chain, integrating different part into one single n8n workflow, contribute to dashboard connection with n8n | e1352030@u.nus.edu |
+| Gao Zijie | A0295363W | Contributed to developing the AI reasoning workflow in n8n, integrating Webhooks, backend APIs, and an LLM-based Chain-of-Thought (COT) reasoning module. Helped automate data extraction, validation, forecasting, and reasoning fusion, enabling interpretable AI-driven decision outputs. Developed the Chat Page and Dashboard Page in React, integrating real-time reasoning results with interactive visual insights.| e1349501@u.nus.edu |
+| Lian Da | A0295323A | Inventory prediction, help on the n8n workflow config | e1349461@u.nus.edu |
+| Wu Hongjia | A0297459E |  Designed and implemented the forecasting intelligence layer; developed FastAPI microservice for MA14, ARIMA, Prophet, and LSTM models; engineered holiday and price-promotion features; exposed forecasting APIs to reasoning and n8n workflow modules. | e1351597@u.nus.edu |
 
 ---
 
 ## SECTION 4 : VIDEO OF SYSTEM MODELLING & USE CASE DEMO
 
-[![Sudoku AI Solver](http://img.youtube.com/vi/-AiYLUjP6o8/0.jpg)](https://youtu.be/-AiYLUjP6o8 "Sudoku AI Solver")
-
-Note: It is not mandatory for every project member to appear in video presentation; Presentation by one project member is acceptable. 
-More reference video presentations [here](https://telescopeuser.wordpress.com/2018/03/31/master-of-technology-solution-know-how-video-index-2/ "video presentations")
+[![Store Replenishment Platform](SystemCode/static/video_showcase.png)](Video/IRS-PM-2025-08-30-AIS04FT-Store-Replenishment-Platform-Promotion.mp4 "Store Replenishment Platform")
 
 ---
 
 ## SECTION 5 : USER GUIDE
 
-`Refer to appendix <Installation & User Guide> in project report at Github Folder: ProjectReport`
+### Installation Guide
 
-### [ 1 ] To run the system using iss-vm
+**Prerequisites**
+- PostgreSQL database server with a user that can create schemas and tables.
+- Docker Desktop; Windows users should enable WSL for the best container compatibility.
+- Ollama installed locally with the language models you plan to serve (for example `ollama pull llama3`).
+- Node.js 18+ and Python 3.10+ available on your PATH.
 
-> download pre-built virtual machine from http://bit.ly/iss-vm
+**Backend Preparation**
+1. Download the M5 forecasting dataset (Kaggle) and place the CSV files inside `SystemCode/Backend/StoreBackend/m5-forecasting-accuracy/`.
+2. From `SystemCode/Backend/StoreBackend/`, run `python m5.py` to create and seed the PostgreSQL database.
+3. Create and activate a Python virtual environment, then install backend dependencies with `pip install -r requirements.txt`.
+4. Update the database connection strings in both `.env` and `app/core/settings.py` so they point to your PostgreSQL instance.
 
-> start iss-vm
+**Run the Backend API**
+1. Ensure PostgreSQL is running and reachable with the credentials configured above.
+2. From `SystemCode/Backend/StoreBackend/`, start the FastAPI service with `python run_api.py`.
+3. Confirm the API is reachable at the configured host and port (default `http://127.0.0.1:8000`).
 
-> open terminal in iss-vm
+**Run the Frontend**
+1. Change to `SystemCode/Frontend/StoreFrontend/` and install dependencies with `npm install`.
+2. Launch the Vite development server using `./start.sh` (macOS/Linux/WSL) or `start.bat` (Windows PowerShell).
+3. Open the printed URL in your browser to access the web interface.
 
-> $ git clone https://github.com/telescopeuser/Workshop-Project-Submission-Template.git
-
-> $ source activate iss-env-py2
-
-> (iss-env-py2) $ cd Workshop-Project-Submission-Template/SystemCode/clips
-
-> (iss-env-py2) $ python app.py
-
-> **Go to URL using web browser** http://0.0.0.0:5000 or http://127.0.0.1:5000
-
-### [ 2 ] To run the system in other/local machine:
-### Install additional necessary libraries. This application works in python 2 only.
-
-> $ sudo apt-get install python-clips clips build-essential libssl-dev libffi-dev python-dev python-pip
-
-> $ pip install pyclips flask flask-socketio eventlet simplejson pandas
+**Configure n8n Orchestration**
+1. Install the official Docker version of n8n following the documentation at https://docs.n8n.io/hosting/installation/docker/ and start the container.
+2. Import both workflow JSON files located in `SystemCode/Frontend/StoreFrontend/n8n/` via the n8n editor UI.
+3. Update each workflow to use the correct webhook URLs for your backend endpoints and set both workflows to **Active**.
+4. Add the PostgreSQL database credentials and your LLM API key (for the Ollama bridge) to the corresponding n8n credentials.
+5. Test each workflow manually to verify that database access, webhook calls, and LLM responses succeed.
 
 ---
 ## SECTION 6 : PROJECT REPORT / PAPER
 
 `Refer to project report at Github Folder: ProjectReport`
 
-**Recommended Sections for Project Report / Paper:**
-- Executive Summary / Paper Abstract
-- Sponsor Company Introduction (if applicable)
-- Business Problem Background
-- Market Research
-- Project Objectives & Success Measurements
-- Project Solution (To detail domain modelling & system design.)
-- Project Implementation (To detail system development & testing approach.)
-- Project Performance & Validation (To prove project objectives are met.)
-- Project Conclusions: Findings & Recommendation
-- Appendix of report: Project Proposal
-- Appendix of report: Mapped System Functionalities against knowledge, techniques and skills of modular courses: MR, RS, CGS
-- Appendix of report: Installation and User Guide
-- Appendix of report: 1-2 pages individual project report per project member, including: Individual reflection of project journey: (1) personal contribution to group project (2) what learnt is most useful for you (3) how you can apply the knowledge and skills in other situations or your workplaces
-- Appendix of report: List of Abbreviations (if applicable)
-- Appendix of report: References (if applicable)
-
 ---
 ## SECTION 7 : MISCELLANEOUS
 
 `Refer to Github Folder: Miscellaneous`
 
-### HDB_BTO_SURVEY.xlsx
-* Results of survey
-* Insights derived, which were subsequently used in our system
-
 ---
 
-### <<<<<<<<<<<<<<<<<<<< End of Template >>>>>>>>>>>>>>>>>>>>
-
----
-
-**This [Machine Reasoning (MR)](https://www.iss.nus.edu.sg/executive-education/course/detail/machine-reasoning "Machine Reasoning") course is part of the Analytics and Intelligent Systems and Graduate Certificate in [Intelligent Reasoning Systems (IRS)](https://www.iss.nus.edu.sg/stackable-certificate-programmes/intelligent-systems "Intelligent Reasoning Systems") series offered by [NUS-ISS](https://www.iss.nus.edu.sg "Institute of Systems Science, National University of Singapore").**
-
-**Lecturer: [GU Zhan (Sam)](https://www.iss.nus.edu.sg/about-us/staff/detail/201/GU%20Zhan "GU Zhan (Sam)")**
-
-[![alt text](https://www.iss.nus.edu.sg/images/default-source/About-Us/7.6.1-teaching-staff/sam-website.tmb-.png "Let's check Sam' profile page")](https://www.iss.nus.edu.sg/about-us/staff/detail/201/GU%20Zhan)
-
-**zhan.gu@nus.edu.sg**
