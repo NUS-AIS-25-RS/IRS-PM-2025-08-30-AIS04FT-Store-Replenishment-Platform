@@ -24,9 +24,9 @@ To ensure interpretability and automation, the system combines Chain-of-Thought 
 | Official Full Name  | Student ID (MTech Applicable)  | Work Items (Who Did What) | Email (Optional) |
 | :------------ |:---------------:| :-----| :-----|
 | Liu Zheyi | A0298521X | Data Preparation, Database setup, Data analyze and setup backend structure | e1352659@u.nus.edu |
-| Cen Haoyang | A0297892A | Config and setup of COT Reasoning Chain, integrating different part into one single n8n workflow, contribute to dashboard connection with n8n | e1352030@u.nus.edu |
+| Cen Haoyang | A0297892A | Config and setup of COT Reasoning Chain, integrating different part into one single n8n workflow, contribute to dashboard connection with n8n, help on the developing of the sales forcasting| e1352030@u.nus.edu |
 | Gao Zijie | A0295363W | Contributed to developing the AI reasoning workflow in n8n, integrating Webhooks, backend APIs, and an LLM-based Chain-of-Thought (COT) reasoning module. Helped automate data extraction, validation, forecasting, and reasoning fusion, enabling interpretable AI-driven decision outputs. Developed the Chat Page and Dashboard Page in React, integrating real-time reasoning results with interactive visual insights.| e1349501@u.nus.edu |
-| Lian Da | A0295323A | Inventory prediction, help on the n8n workflow config | e1349461@u.nus.edu |
+| Lian Da | A0295323A | Inventory prediction, contribute to the training of the generalization of data structure, help on the n8n workflow config | e1349461@u.nus.edu |
 | Wu Hongjia | A0297459E |  Designed and implemented the forecasting intelligence layer; developed FastAPI microservice for MA14, ARIMA, Prophet, and LSTM models; engineered holiday and price-promotion features; exposed forecasting APIs to reasoning and n8n workflow modules. | e1351597@u.nus.edu |
 
 ---
